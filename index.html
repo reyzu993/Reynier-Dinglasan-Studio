@@ -24,62 +24,71 @@
     </section>
 
     <section class="skills-section">
-        <div class="skill-category">
-            <h3>Primary Tools</h3>
-            <div class="skill-list">
-                <span class="skill-tag">Unreal Engine</span>
-                <span class="skill-tag">Blender</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-card">
+                <h3>Primary Tools</h3>
+                <div class="skill-tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blender</span>
+                </div>
             </div>
-        </div>
-        <div class="skill-category">
-            <h3>Languages</h3>
-            <div class="skill-list">
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Javascript</span>
-                <span class="skill-tag">Blueprint</span>
+
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Blueprint Scripting</span>
+                </div>
             </div>
-        </div>
-        <div class="skill-category">
-            <h3>Soft Skills & Systems</h3>
-            <div class="skill-list">
-                <span class="skill-tag">Version Control</span>
-                <span class="skill-tag">System Functions</span>
+
+            <div class="skill-card">
+                <h3>System & Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="tag">Version Control (Git)</span>
+                    <span class="tag">System Architecture</span>
+                    <span class="tag">Project Management</span>
+                </div>
             </div>
+
         </div>
     </section>
 
     <section class="projects-section">
         <h2 class="section-title">Selected Projects</h2>
         <div class="projects-grid">
-            
             <div class="project-item" onclick="openModal('modal1')">
-                <img src="project1.jpg" alt="Project 1" class="project-thumb"> <div class="project-overlay">
+                <img src="project1.jpg" alt="Project 1" class="project-thumb">
+                <div class="project-overlay">
                     <h3>The Urban Canopy</h3>
-                    <p>Click to view details</p>
+                    <p>View Case Study</p>
                 </div>
             </div>
-
             <div class="project-item" onclick="openModal('modal2')">
-                <img src="project2.jpg" alt="Project 2" class="project-thumb"> <div class="project-overlay">
+                <img src="project2.jpg" alt="Project 2" class="project-thumb">
+                <div class="project-overlay">
                     <h3>System Architecture</h3>
-                    <p>Click to view details</p>
+                    <p>View Case Study</p>
                 </div>
             </div>
-
             <div class="project-item" onclick="openModal('modal3')">
-                <img src="project3.jpg" alt="Project 3" class="project-thumb"> <div class="project-overlay">
+                <img src="project3.jpg" alt="Project 3" class="project-thumb">
+                <div class="project-overlay">
                     <h3>Visual Identity</h3>
-                    <p>Click to view details</p>
+                    <p>View Case Study</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="video-section">
         <h2 class="section-title">Latest Devlog</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -103,23 +112,21 @@
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
             <h2>The Urban Canopy</h2>
-            <p>Full description of the Urban Canopy project goes here. Tech stack used, challenges overcome, and results.</p>
+            <p>Full description of the project...</p>
         </div>
     </div>
-
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
             <h2>System Architecture</h2>
-            <p>Details about your system functions and version control methodologies.</p>
+            <p>Details about system functions...</p>
         </div>
     </div>
-
     <div id="modal3" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
             <h2>Visual Identity</h2>
-            <p>Details about the branding proposal, color palettes, and logo design.</p>
+            <p>Branding proposal details...</p>
         </div>
     </div>
 
