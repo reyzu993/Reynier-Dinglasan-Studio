@@ -5,62 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reynier Dinglasan-Studio</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
 
-    <div class="main-wrapper">
-        
-        <header class="profile-header">
-            <div class="banner-container">
-                <img src="banner.jpg" alt="Studio Banner" class="banner-img">
+    <header class="site-header">
+        <div class="banner-area">
+            <img src="banner.jpg" alt="Studio Banner" class="banner-img">
+        </div>
+        <div class="logo-area">
+            <img src="logo.jpg" alt="RD-S Logo" class="profile-logo">
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1 class="headline">Building Digital Worlds & Experiences</h1>
+        <h2 class="sub-headline">Game Development | Visual Identity | System Design</h2>
+        <a href="#footer" class="cta-button">Work With Me</a>
+    </section>
+
+    <section class="skills-section">
+        <div class="skill-category">
+            <h3>Primary Tools</h3>
+            <div class="skill-list">
+                <span class="skill-tag">Unreal Engine</span>
+                <span class="skill-tag">Blender</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-list">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Javascript</span>
+                <span class="skill-tag">Blueprint</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Soft Skills & Systems</h3>
+            <div class="skill-list">
+                <span class="skill-tag">Version Control</span>
+                <span class="skill-tag">System Functions</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-item" onclick="openModal('modal1')">
+                <img src="project1.jpg" alt="Project 1" class="project-thumb"> <div class="project-overlay">
+                    <h3>The Urban Canopy</h3>
+                    <p>Click to view details</p>
+                </div>
             </div>
 
-            <div class="logo-container">
-                <img src="logo.jpg" alt="RD-S Logo" class="profile-logo">
-            </div>
-
-            <div class="identity-section">
-                <h1 class="brand-name">Reynier Dinglasan-Studio</h1>
-                <p class="tagline">Digital Design Studio</p>
-                
-                <div class="social-links">
-                    <a href="https://facebook.com/yourpage" target="_blank" class="social-btn">Facebook</a>
-                    <a href="https://youtube.com/yourchannel" target="_blank" class="social-btn">YouTube</a>
+            <div class="project-item" onclick="openModal('modal2')">
+                <img src="project2.jpg" alt="Project 2" class="project-thumb"> <div class="project-overlay">
+                    <h3>System Architecture</h3>
+                    <p>Click to view details</p>
                 </div>
             </div>
-        </header>
 
-        <section class="content-area">
-            <h2>Selected Works</h2>
-            <div class="gallery">
-                <div class="project-card">
-                    <div class="card-image-placeholder"></div>
-                    <h3>Branding Project</h3>
-                    <p>Visual Identity Design</p>
-                </div>
-                <div class="project-card">
-                    <div class="card-image-placeholder"></div>
-                    <h3>Social Media Kit</h3>
-                    <p>Content Strategy & Assets</p>
-                </div>
-                <div class="project-card">
-                    <div class="card-image-placeholder"></div>
-                    <h3>Web Layouts</h3>
-                    <p>UI/UX Design</p>
-                </div>
-                <div class="project-card">
-                    <div class="card-image-placeholder"></div>
-                    <h3>Typography Study</h3>
-                    <p>Font Pairing & Layout</p>
+            <div class="project-item" onclick="openModal('modal3')">
+                <img src="project3.jpg" alt="Project 3" class="project-thumb"> <div class="project-overlay">
+                    <h3>Visual Identity</h3>
+                    <p>Click to view details</p>
                 </div>
             </div>
-        </section>
 
-        <footer>
-            <p>&copy; 2026 Reynier Dinglasan-Studio</p>
-        </footer>
+        </div>
+    </section>
 
+    <section class="video-section">
+        <h2 class="section-title">Latest Devlog</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>About Reynier Dinglasan-Studio</h3>
+            <p class="bio-text">
+                I am a developer and designer passionate about merging logic with aesthetics. 
+                Specializing in Unreal Engine game development and branding, I create immersive 
+                experiences and robust system functions.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com/yourpage" target="_blank" class="social-btn">Facebook</a>
+                <a href="https://youtube.com/yourchannel" target="_blank" class="social-btn">YouTube</a>
+            </div>
+            <p class="copyright">&copy; 2026 Reynier Dinglasan-Studio</p>
+        </div>
+    </footer>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2>The Urban Canopy</h2>
+            <p>Full description of the Urban Canopy project goes here. Tech stack used, challenges overcome, and results.</p>
+        </div>
     </div>
 
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2>System Architecture</h2>
+            <p>Details about your system functions and version control methodologies.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <h2>Visual Identity</h2>
+            <p>Details about the branding proposal, color palettes, and logo design.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
